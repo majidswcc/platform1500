@@ -1,12 +1,12 @@
 import React from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import Navbar from "./components/Navbar.jsx";
+import Footer from "./components/Footer.jsx";
 
-import Home from "./pages/Home";
-import Programs from "./pages/Programs";
-import Partners from "./pages/Partners";
-import Dashboard from "./pages/Dashboard";
+import Home from "./pages/Home.jsx";
+import Programs from "./pages/Programs.jsx";
+import Partners from "./pages/Partners.jsx";
+import Dashboard from "./pages/Dashboard.jsx";
 
 export default function App() {
   return (
@@ -18,7 +18,6 @@ export default function App() {
           <Route path="/programs" element={<Programs />} />
           <Route path="/partners" element={<Partners />} />
           <Route path="/dashboard" element={<Dashboard />} />
-          {/* صفحات لاحقة: /about /register /contact ... */}
         </Routes>
         <Footer />
       </div>
